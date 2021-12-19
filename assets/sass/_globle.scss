@@ -1,0 +1,64 @@
+html {
+    font-family: $primary--font;
+    font-size: 18px;
+    color: $text-light;
+    background-color: $primary--color;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.button {
+    cursor: pointer;
+    font-family: $secondary--font;
+    display: inline-block;
+    padding: 17px 32px;
+    border-radius: 100rem;
+    &--primary {
+        background: linear-gradient(180deg, #3975f2 0%, #0643c4 100%);
+        color: $text-light;
+        padding: 17px 25px;
+    }
+    &--secondary {
+        font-family: $secondary--font;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: 1.5px solid #ffffff3e;
+
+        p {
+            color: $text-light;
+            margin: 0 !important;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.5;
+            padding-right: 8px;
+        }
+    }
+    &--third {
+        font-family: $secondary--font;
+        padding: 17px 0;
+        display: flex;
+        align-items: center;
+        p {
+            color: #ffffff5e;
+            margin-left: 13px;
+        }
+    }
+    &--cricle {
+        display: block;
+        cursor: pointer;
+        border-radius: 100rem;
+        background-color: #fff;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.05);
+        ion-icon {
+            color: $text-dark;
+            font-size: 16px;
+        }
+    }
+}
